@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 26, 255, 0.753)), url(magnifiscent.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 25%;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #ff0000;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+button:hover{
+    border: none;
+}
+
+button:hover{
+    border: none;
+}
+
+button:hover{
+    border: none;
+}
+
+.audio-player {
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+.audio-player audio {
+    width: 100%;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.audio-player audio::-webkit-media-controls-play-button,
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+    color: #000000;
+}
+
+.products {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 100;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-card button {
+  margin-top: 8px;
+  padding: 9px 25px;
+  border: none;
+  background: #0077ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.0rem;
+  width: auto;
+  min-width: 100px;
+  text-align: center;
+}
+
+.product-card button:hover {
+  background: hsl(0, 100%, 50%);
+}
+
+footer {
+  position: fixed;       /* Sticks it at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;           /* Full width */
+  text-align: center;    /* Centers the text */
+  padding: 10px;
+  background: transparent; /* or choose a color if you want a footer bar */
+  color: white;          /* Adjust color to match your design */
+  font-size: 14px;
+}
+
+.about {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    color: #ff0000;
+}
+
+.about p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
